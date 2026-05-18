@@ -9,7 +9,12 @@ Displays results from Parts 2, 3, and 4 of the analysis.
 Run with:
     streamlit run dashboard.py
 """
+import os
+import subprocess
 
+# If database doesn't exist, run load_data.py to create it
+if not os.path.exists("teiko.db"):
+    subprocess.run(["python", "load_data.py"], check=True)
 import streamlit as st
 import sqlite3
 import pandas as pd
