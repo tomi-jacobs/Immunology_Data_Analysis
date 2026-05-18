@@ -20,7 +20,7 @@ make dashboard
 
 ## Dashboard
 
-[View live dashboard](https://pythia-dashboardd.vercel.app) *(replace with deployed dashboard URL)*
+[View live dashboard](https://teiko-assessment-jjibuoky6q9e3tdmayvwbl.streamlit.app
 
 ---
 
