@@ -15,6 +15,13 @@ import subprocess
 # If database doesn't exist, run load_data.py to create it
 if not os.path.exists("teiko.db"):
     subprocess.run(["python", "load_data.py"], check=True)
+import os
+import subprocess
+
+# Create database if it does not exist
+if not os.path.exists('teiko.db'):
+    subprocess.run(['python3', 'load_data.py'], check=True)
+
 import streamlit as st
 import sqlite3
 import pandas as pd
