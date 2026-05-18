@@ -9,18 +9,6 @@ Displays results from Parts 2, 3, and 4 of the analysis.
 Run with:
     streamlit run dashboard.py
 """
-import os
-import subprocess
-
-# If database doesn't exist, run load_data.py to create it
-if not os.path.exists("teiko.db"):
-    subprocess.run(["python", "load_data.py"], check=True)
-import os
-import subprocess
-
-# Create database if it does not exist
-if not os.path.exists('teiko.db'):
-    subprocess.run(['python3', 'load_data.py'], check=True)
 
 import streamlit as st
 import sqlite3
@@ -40,10 +28,7 @@ st.set_page_config(
 DB_FILE = "teiko.db"
 
 def get_connection():
-    """Create database if needed then return connection"""
-    import subprocess
-    if not os.path.exists(DB_FILE):
-        subprocess.run(["python3", "load_data.py"], check=True)
+    """Return a connection to the SQLite database"""
     conn = sqlite3.connect(DB_FILE)
     return conn
 
