@@ -40,7 +40,10 @@ st.set_page_config(
 DB_FILE = "teiko.db"
 
 def get_connection():
-    """Return a connection to the SQLite database"""
+    """Create database if needed then return connection"""
+    import subprocess
+    if not os.path.exists(DB_FILE):
+        subprocess.run(["python3", "load_data.py"], check=True)
     conn = sqlite3.connect(DB_FILE)
     return conn
 
