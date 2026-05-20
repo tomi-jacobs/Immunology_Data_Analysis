@@ -1,5 +1,4 @@
-# Teiko Technical Assessment
-**Tomi Jacobs** · PhD Candidate, Computational Biology · University of Illinois Chicago
+
 
 ---
 
