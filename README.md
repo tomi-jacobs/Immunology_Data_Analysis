@@ -151,4 +151,4 @@ Code is written to be readable and defensible. Functions are short, named clearl
 **Part 3:** Of the five immune cell populations tested, only **CD4 T cells** showed a statistically significant difference between responders and non-responders (Mann-Whitney U, p=0.0134). Responders had a higher median CD4 T cell frequency (30.22%) compared to non-responders (29.66%), suggesting CD4 T cells may serve as a predictive biomarker for miraclib response in melanoma patients.
 
 **Part 4:** Among 656 baseline melanoma miraclib PBMC samples, the average B cell count for male responders was **10,401.28**.
-# teiko-assessment
+
